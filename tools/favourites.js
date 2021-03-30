@@ -18,7 +18,7 @@ if (needToUpgrade) {
 
 function getAllFavCities() {
     try {
-        return db.prepare(`SELECT * FROM favs`).all();
+        return db.prepare(`SELECT * FROM favs ORDER BY city_name`).all();
     } catch (e) {
         return null;
     }
