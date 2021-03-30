@@ -92,15 +92,15 @@ function addCityToFavouritesByName() {
  */
 
 function formatRequestWithGeoCoords(lat, lon) {
-    return `http://localhost:8888/weather/coordinates?lat=${lat}&lon=${lon}`;
+    return `https://gentle-cliffs-94109.herokuapp.com/weather/coordinates?lat=${lat}&lon=${lon}`;
 }
 
 function formatRequestWithQuery(query) {
-    return `http://localhost:8888/weather/city?query=${query}`;
+    return `https://gentle-cliffs-94109.herokuapp.com/weather/city?query=${query}`;
 }
 
 function favouriteCitiesUrl() {
-    return `http://localhost:8888/favourites`;
+    return `https://gentle-cliffs-94109.herokuapp.com/favourites`;
 }
 
 function addToFavouriteCityUrl(city) {
