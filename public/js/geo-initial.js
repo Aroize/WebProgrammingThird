@@ -108,11 +108,11 @@ function addToFavouriteCityUrl(city) {
     const city_name = city['city_name'];
     const lat = city['lat'];
     const lon = city['lon'];
-    return `http://localhost:8888/favourites?id=${id}&city_name=${city_name}&lat=${lat}&lon=${lon}`;
+    return `https://gentle-cliffs-94109.herokuapp.com/favourites?id=${id}&city_name=${city_name}&lat=${lat}&lon=${lon}`;
 }
 
 function removeFromFavouritesCityUrl(id) {
-    return `http://localhost:8888/favourites?id=${id}`;
+    return `https://gentle-cliffs-94109.herokuapp.com/favourites?id=${id}`;
 }
 
 function requestCityWeather(city, requestCallback) {
