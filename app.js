@@ -2,7 +2,7 @@ const express = require('express');
 const weather = require('./tools/weather.js');
 const favs = require('./tools/favourites');
 const app = express();
-const port = 8888;
+const port = process.env.PORT || 3000;
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
